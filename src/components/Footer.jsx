@@ -1,4 +1,4 @@
-import HabotLogo from "../assets/HabotLogo2.png";
+import HabotLogo from "/HabotLogo2.png";
 import { FaLinkedinIn } from "react-icons/fa";
 import { TiSocialTwitter } from "react-icons/ti";
 import { TiSocialFacebook } from "react-icons/ti";

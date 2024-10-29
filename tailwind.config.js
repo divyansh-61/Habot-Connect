@@ -7,8 +7,8 @@ export default {
         "grey": "#6d6e71"
       },
       backgroundImage: {
-        "Rectangle": "url('./src/assets/Rectangle.png')",
-        "YoutubeVideo": "url('./src/assets/YoutubeVideo.jpeg')",
+        "Rectangle": "url('/Rectangle.png')",
+        "YoutubeVideo": "url('/YoutubeVideo.jpeg')",
       }
     },
   },

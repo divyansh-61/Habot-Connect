@@ -5,7 +5,7 @@ import Menu from "@mui/material/Menu";
 // import { CgMenuRound } from "react-icons/cg";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
-import HabotLogo from "../assets/habot-logo.jpg";
+import HabotLogo from "/habot-logo.jpg";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Header = () => {
