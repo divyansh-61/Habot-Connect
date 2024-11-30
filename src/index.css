@@ -19,5 +19,5 @@
 
 /*Home Page Mui Tabs Indicator */
 .css-jhczcq-MuiTabs-root .MuiTabs-indicator {
-  background-color: #ffa500;
+  background-color: #ffa500 !important;
 }
