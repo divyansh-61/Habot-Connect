@@ -5,10 +5,12 @@ import Header from "./components/Header";
 const App = () => {
   return (
     <main className="overflow-x-hidden relative">
-      <Header />
+      <div className="fixed w-full z-50">
+        <Header />
+      </div>
 
       {/* Page main content will be displaced here */}
-      <main>
+      <main className="mt-16 md:mt-20">
         <Outlet />
       </main>
 

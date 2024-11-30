@@ -6,7 +6,6 @@ import TabPanel from "@mui/lab/TabPanel";
 import { IoBagHandleSharp } from "react-icons/io5";
 import { BsArrowRight } from "react-icons/bs";
 import { FaLocationDot } from "react-icons/fa6";
-import YoutubeLogo from "/YoutubeLogo.png";
 import Checked from "/checked.png";
 import AddFriend from "/AddFriend.png";
 import DealDone from "/DealDone.png";
@@ -19,6 +18,7 @@ import { useState } from "react";
 
 const Home = () => {
   const [value, setValue] = useState("1");
+  const cities = ["Abu Dhabi", "Dubai", "Sharjah & Ajman", "Fujairah", "Ras Al Khaimah", "Umm Al Quwain"]
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -27,10 +27,10 @@ const Home = () => {
     <>
       <div className="w-full h-full">
         {/* Top image section */}
-        <div className="bg-Rectangle w-full h-[40rem] md:h-[30rem] bg-cover">
-          <div className="text-white text-center flex flex-col gap-3 justify-center items-center h-full w-full bg-gradient-to-t from-[#072f57e4] from-0% via-[#072f5767] via-45% to-[#072f57d2] to-90%">
+        <div className="bg-Rectangle w-full h-[40rem] md:h-[35rem] bg-cover">
+          <div className="text-white p-4 text-center flex flex-col gap-3 justify-center items-center h-full w-full bg-gradient-to-t from-[#072f57e4] from-0% via-[#072f5767] via-45% to-[#072f57d2] to-90%">
             <span className="font-bold text-3xl md:text-4xl lg:text-5xl">Are You a Supplier?</span>
-            <span className="text-2xl md:text-4xl lg:text-5xl">Explore Matching Opportunities.</span>
+            <span className="text-xl md:text-4xl lg:text-5xl">Explore Matching Opportunities.</span>
 
             <div className="flex flex-col items-center lg:flex-row gap-2 py-6 h-fit">
               {/* Desires Service */}
@@ -99,37 +99,19 @@ const Home = () => {
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <span className="text-nowrap border-2 text-center border-orange-400 h-fit font-medium rounded px-1.5 md:px-16 py-3">
-                Abu Dhabi
-              </span>
-              <span className="text-nowrap border-2 text-center border-orange-400 h-fit font-medium rounded px-1.5 md:px-16 py-3">
-                Dubai
-              </span>
-              <span className="text-nowrap border-2 text-center border-orange-400 h-fit font-medium rounded px-1.5 md:px-16 py-3">
-                Sharjah & Ajman
-              </span>
-              <span className="text-nowrap border-2 text-center border-orange-400 h-fit font-medium rounded px-1.5 md:px-16 py-3">
-                Fujairah
-              </span>
-              <span className="text-nowrap border-2 text-center border-orange-400 h-fit font-medium rounded px-1.5 md:px-16 py-3">
-                Ras Al Khaimah
-              </span>
-              <span className="text-nowrap border-2 text-center border-orange-400 h-fit font-medium rounded px-1.5 md:px-16 py-3">
-                Umm Al Quwain
-              </span>
+              {cities.map((city, index) =>
+
+                <span key={index} className="text-nowrap border-2 text-center border-orange-400 h-fit font-medium rounded px-1.5 md:px-16 py-3">
+                  {city}
+                </span>
+              )}
             </div>
           </div>
           {/* Ready to dive into HABOT? Ends */}
 
           {/* POST YOUR REQUIREMENTS */}
           <div className="bg-[#072F57] flex flex-col md:flex-row justify-between gap-6 md:gap-8 lg:gap-14 items-start py-10 md:py-20 px-3.5 md:px-10 lg:px-16 w-full">
-            <div className="bg-YoutubeVideo flex justify-center items-center h-60 md:h-96 w-full md:w-1/2 bg-no-repeat bg-center bg-cover">
-              <img
-                src={YoutubeLogo}
-                alt=""
-                className="h-16 w-16 object-contain md:h-fit md:w-fit bg-white overflow-hidden md:rounded-3xl"
-              />
-            </div>
+            <iframe src="https://www.youtube.com/embed/i8tgRHXx4oQ?si=Q85GE2Wg2-JldEYl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen title="HABOT CONNECT - POST YOUR REQUIREMENTS" className="h-72 sm:h-96 w-full md:w-1/2 object-contain bg-white overflow-hidden md:rounded-lg" ></iframe>
 
             <div className="md:w-1/2 w-full h-full">
               <Box sx={{ width: "100%", typography: "body1" }}>

@@ -43,18 +43,26 @@ const Footer = () => {
         </div>
 
         <div className="grid grid-cols-4 text-white gap-3">
-          <div className="border border-white rounded-full p-2 w-fit">
+
+          {/* Linkedin Link */}
+          <a href="https://www.linkedin.com/company/habot-connect/" className="border border-white rounded-full p-2 w-fit hover:bg-white hover:text-blue-950 transition hover:scale-110">
             <FaLinkedinIn className="scale-125 object-cover " />
-          </div>
-          <div className="border border-white rounded-full p-2 w-fit">
+          </a>
+
+          {/* Twitter Link */}
+          <a href="https://twitter.com/HabotConnect" className="border border-white rounded-full p-2 w-fit hover:bg-white hover:text-blue-950 transition hover:scale-110">
             <TiSocialTwitter className="scale-125 object-cover " />
-          </div>
-          <div className="border border-white rounded-full p-2 w-fit">
+          </a>
+
+          {/* Facebook Link */}
+          <a href="https://www.facebook.com/habotconnect" className="border border-white rounded-full p-2 w-fit hover:bg-white hover:text-blue-950 transition hover:scale-110">
             <TiSocialFacebook className="scale-150 object-cover " />
-          </div>
-          <div className="border border-white rounded-full p-2 w-fit">
+          </a>
+
+          {/* Instagram Link */}
+          <a href="https://www.instagram.com/habotconnect/" className="border border-white rounded-full p-2 w-fit hover:bg-white hover:text-blue-950 transition hover:scale-110">
             <SlSocialInstagram className="scale-125 object-cover " />
-          </div>
+          </a>
         </div>
       </div>
     </div>
